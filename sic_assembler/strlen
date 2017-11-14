@@ -1,0 +1,20 @@
+test     start   1000
+first    jsub    strlen
+         j       done
+strlen   ldx     len
+         lda     null
+         ldch    str1,x
+         comp    null
+         jgt     strcnt
+         jeq     exit
+strcnt   lda     len
+         add     incr
+         sta     len
+         j       strlen
+exit     rsub
+zero     word    0
+incr     word    1
+len      word    0
+null     resb    3
+str1     byte    c'ab ef!'
+done     end     first

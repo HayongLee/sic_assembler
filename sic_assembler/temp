@@ -1,0 +1,17 @@
+test     start   1000
+first    ldx     index
+         jsub    strcmp
+         jsub    strcpy
+strcmp   lda     index
+         rsub
+strcpy   lda     incr
+         rsub
+hello worlds.
+count    word    11
+str1     byte    c'str'
+str2     byte    c'str2'
+tmp      byte    x'000004'
+temp     byte    x'f4'
+index    word    0
+incr     word    1
+         end     first

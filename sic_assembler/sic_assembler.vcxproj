@@ -111,6 +111,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="\\mac\Home\Desktop\SICASM\SICASM\InstructionStruct.cpp" />
+    <ClCompile Include="\\mac\Home\Desktop\SICASM\SICASM\main.cpp" />
+    <ClCompile Include="\\mac\Home\Desktop\SICASM\SICASM\OpTable.cpp" />
+    <ClCompile Include="\\mac\Home\Desktop\SICASM\SICASM\SymTab.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="\\mac\Home\Desktop\SICASM\SICASM\InstructionStruct.h" />
+    <ClInclude Include="\\mac\Home\Desktop\SICASM\SICASM\OpTable.h" />
+    <ClInclude Include="\\mac\Home\Desktop\SICASM\SICASM\SymTab.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OPTABLE" />
+    <None Include="strlen" />
+    <None Include="temp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="OPTABLE.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
